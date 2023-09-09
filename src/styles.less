@@ -1,0 +1,87 @@
+* {
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+#content {
+  margin:  5px;
+  padding: 5px;
+  width:   75%;
+}
+
+#sidebar {
+  margin:  5px;
+  padding: 5px;
+  width:   25%;
+
+  > a {
+    color:   #000;
+    display: block;
+    width:   100%;
+    padding: 5px;
+    text-decoration: none;
+
+    &:hover {
+      background: #f8f8f8;
+    }
+
+    &:focus {
+      background: #f2f2f2;
+    }
+  }
+}
+
+details {
+  padding:    5px;
+  margin-top: 5px;
+  border:     1px dotted #ddd;
+
+  &:not([open]):hover {
+    background: #f8f8f8;
+  }
+
+  summary {
+    cursor: pointer;
+
+    &::marker {
+      content: '';
+    }
+  }
+
+  > div {
+    padding:    10px 5px 0 5px;
+    margin-top: 10px;
+    border-top: 1px dotted #ddd;
+
+    > *:last-child {
+      margin-bottom:  0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  margin: 0 0 5px 0;
+}
+
+input, button {
+  border:  1px solid #ddd;
+  padding: 5px;
+}
+
+button {
+  background: #eee;
+  cursor: pointer;
+
+  &:hover {
+    background: #ddd;
+  }
+
+  &:active {
+    background: #ccc;
+  }
+}
